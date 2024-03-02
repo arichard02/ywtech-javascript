@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DOM Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+    <section class="photo-container">
+        <img id="current-image" src="images/cat.jpg" />
+    </section>
+    <p id="caption">This is a cat</p>
+
+    <div class="buttons">
+        <button aria-label="Cat" onclick="showImage('cat.jpg', 'Walter the Cat')"></button>
+        <button aria-label="Bird" onclick="showImage('bird.jpg', 'Yellow-bellied Warbler')"></button>
+        <button aria-label="Fish" onclick="showImage('fish.jpg', 'Puffer Fish')"></button>
+        <button aria-label="Dog" onclick="showImage('dog.jpg', 'Golden Retriever')"></button>
+        <button aria-label="Sloth" onclick="showImage('sloth.jpg', 'South American Sloth')"></button>
+    </div>
+</body>
+
+</html>
