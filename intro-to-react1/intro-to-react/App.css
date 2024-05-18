@@ -1,0 +1,78 @@
+header,
+.carousel-container,
+.container {
+    width: 800px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.carousel-container img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.center-me {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background: lightgoldenrodyellow;
+    height: 300px;
+    font-size: 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Sarah added some custom CSS here for the carousel buttons */
+.ant-carousel .slick-dots {
+    width: 20px;
+}
+
+.ant-carousel .slick-dots.slick-dots-bottom,
+.ant-carousel .slick-dots.slick-dots-top {
+    width: auto;
+}
+
+.ant-carousel .slick-dots.slick-dots-top {
+    top: 10px;
+}
+
+.ant-carousel .slick-dots.slick-dots-bottom {
+    bottom: 30px;
+}
+
+.ant-carousel .slick-dots li {
+    margin: 4px 0;
+}
+
+.ant-carousel .slick-dots-bottom li,
+.ant-carousel .slick-dots-top li {
+    margin: 0px 4px;
+}
+
+.ant-carousel .slick-dots li button,
+.ant-carousel .slick-dots-bottom li button {
+    opacity: 1;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: solid 2px #777;
+}
+
+.ant-carousel .slick-dots-bottom li.slick-active,
+.ant-carousel .slick-dots-top li.slick-active {
+    width: auto;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+    background: rgb(8, 92, 228);
+    width: 16px;
+    height: 16px;
+    border: solid 2px white;
+}
